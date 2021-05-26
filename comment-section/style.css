@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.5vmin;
+    background: linear-gradient(100deg, #ddd 10%, palevioletred 90%) ;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.comment-container {
+    border-radius: 8px;
+    border: 3px solid #e2e2e2;
+    margin: 3rem auto;
+    padding: 10px;
+    max-width: 600px;
+    min-height: 200px;
+    box-shadow: -8px 3px 3px #4a5568;
+    user-select: none;
+    background-color: #fff;
+}
+
+.comment-container-title {
+    background: #f8f8f8;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ebebeb;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #2d3748;
+    margin-top: 5px;
+    letter-spacing: 0.2rem  ;
+    text-shadow: 3px 3px  8px #333;
+    font-weight:  500 ;
+    text-align: center;
+}
+
+.comment {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+}
+
+/* new comment */
+.comment-new {
+    border-top: 1px solid #ebebeb;
+    padding-top: 1rem;
+    margin: 1rem auto;
+}
+
+/* img */
+.comment-avatar {
+    margin-right: 1rem;
+    border-radius: 50%;
+    height: 48px;
+}
+
+/* author */
+.comment-author {
+    font-size: 1rem;
+    letter-spacing: 0.1rem ;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.comment-body {
+    color: #4a5568;
+    line-height: 1.4;
+    margin: 0;
+    font-size: 14px;
+    padding-right: 1rem;
+}
+
+.comment-input {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.4;
+    width: 100%;
+    padding: 0.8rem;
+}
+
+/* when comment input get focus */
+.comment-input:focus {
+    border-color: #5c6ac4;
+    outline: none;
+}
+
+.comment-input::placeholder {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.comment-submit {
+    background: #5c6ac4;
+    color: #ddd;
+    padding: 5px 8px;
+    width: 100px;
+    margin-top: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: filter 200ms ease-in-out;
+}
+
+/* button to delete  all comments */
+.comment .comment-delete {
+    background-color: palevioletred;
+    color: #ddd;
+    padding: 7px 10px;
+    letter-spacing: 0.2rem;
+    border-radius: 30px;
+    border: none;
+    font-weight:  600;
+    cursor: pointer;
+    transition: filter 200ms ease-in-out;
+}
+
+/* when button get hover/focus on */
+.comment-submit:hover, .comment-submit:focus, .comment-delete:hover, .comment-delete:focus {
+    filter: brightness(120%);
+}
